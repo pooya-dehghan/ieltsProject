@@ -1,0 +1,18 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: khaki;
+
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* ::-webkit-scrollbar-thumb {
+    background: #FF0000;
+} */
+html {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}

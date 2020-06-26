@@ -1,0 +1,17 @@
+.button{
+    width: 100px;
+    height: 200px;
+    background-color:#95afc0;
+    color: aliceblue;
+    border-radius: 2px;
+    cursor: pointer;    
+    margin-top: 8px;
+    margin-left: 2px;
+    text-align: center;
+    transition: all ease-in-out 300ms;
+
+}
+.button:hover{
+    background-color: #535c68;
+    transform: scale(1.11);
+}

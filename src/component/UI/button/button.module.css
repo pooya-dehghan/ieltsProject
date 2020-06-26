@@ -1,0 +1,19 @@
+.button{
+    width: 150px;
+    height: 44px;
+    background-color:#95afc0;
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;    
+    transition: all ease-in-out 600ms;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle; 
+    line-height: 20px;
+}
+.button:hover{
+    background-color: #535c68;
+    transform: scale(1.2);
+    transition: all ease-in-out 300ms;
+}

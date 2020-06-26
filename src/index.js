@@ -1,13 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { compose,applyMiddleware,createStore,combineReducers } from 'redux'
+import thunk from 'redux-thunk'
+import {Provider} from 'react-redux'
+import percentageReducer from './component/store/reducers/percentageReducer'
+import viewresultReducer from './component/store/reducers/viewresultReducer'
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const rootReducer = combineReducers({
+  percentage:percentageReducer,
+  viewresult:viewresultReducer,
+  
+})
+
+const store = createStore(rootReducer, composeEnhancers(
+  applyMiddleware(thunk)
+))
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 

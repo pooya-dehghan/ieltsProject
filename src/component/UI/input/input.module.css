@@ -1,0 +1,70 @@
+.parent{
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.label{
+    color:#130f40;
+    padding-bottom: 30px;
+    font-size:30px;
+}
+.inputParent{
+    margin-bottom: 30px;
+}
+.input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    background-color: inherit;
+    padding-left: 10px;
+    color: #2c2c54;
+}
+.input::placeholder {
+    color: #8598a5cb;
+    transition: all ease 300ms;
+}
+.input:focus::-webkit-input-placeholder {
+  color: rgba(115, 199, 248, 0);
+}
+
+.input:focus+.underline {
+  transform: scale(1);
+}
+
+.underline {
+  display: flex;
+  background-color: rgb(115, 199, 248);
+  height: 2px;
+  margin-top: -4px;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  width: 60%;
+}
+.error{
+    color: black;
+    padding:10px;
+    width: fit-content;
+    height: 20%;
+    background-color: rgb(182, 27, 0);
+    letter-spacing: 3px;
+}
+.select{
+    width: 40%;
+    height: 25px;
+    padding-left:10px;
+    font-size: 3vh;
+    background-color:rgb(92, 92, 92) ;
+    margin: 10px;
+    outline: none;
+    border: none;
+    appearance: none;
+    border:1px rgb(19, 75, 94) solid;
+    border-radius: 5px;
+    color: whitesmoke;
+}
